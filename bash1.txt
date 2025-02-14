@@ -1,0 +1,33 @@
+3) pwd
+4) mkdir test1
+5) сd test1
+6) touch file1.txt 
+ touch file2.txt 
+ touch file3.txt
+7) ls
+8) cd ..
+9) mkdir test2
+10) rm -r test2
+11) cd test1
+ rm file2.txt
+12) cd ..
+mkdir test3
+cd test3
+touch file1.txt
+touch file2.txt
+13) cd ..
+rm -r test3
+14) mkdir test4
+15) mv test1/file1.txt test1/file3.txt test4/
+16) cd test4
+ echo "line" >> file1.txt
+ echo "line" >> file1.txt
+ echo "line" >> file1.txt 
+17) cat file1.txt
+18) echo "line" >> file3.txt
+ echo "line" >> file3.txt
+ echo "line" >> file3.txt
+19) cat file1.txt file3.txt
+20) echo no line > file1.txt
+ echo no line >> file1.txt
+ echo no line >> file1.txt

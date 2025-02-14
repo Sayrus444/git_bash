@@ -1,0 +1,51 @@
+3) mkdir test3
+4) cd test3
+touch file4.txt
+echo "row1" >> file4.txt (4 раза)
+echo "row2" >> file4.txt (4 раза)
+echo "row3" >> file4.txt (4 раза)
+echo "row4" >> file4.txt (4 раза)
+cp file4.txt file5.txt
+cp file4.txt file6.txt
+5) grep "row2" file5.txt
+6) cd ..
+grep -r "row" test3
+7) cd test3
+grep -c "row" file6.txt
+8) cd ..
+find test3 -name "file5.txt"
+9) find test3 -name "file5.txt" -exec rm {} \;
+10) cd test3
+echo test > file4.txt
+11) sed -i 's/test/fail/g' file4.txt
+12) echo test >> file4.txt
+13) ps / ps aux / top
+14) kill 666
+15) ping rusau.net
+16) ping -n 5 rusau.net (ping -c 5 rusau.net не сработал, требуется права администратора)
+17) 	echo "Available pets:"
+	curl -X GET "https://petstore.swagger.io/v2/pet/findByStatus?status=available" -H "accept: application/json"
+
+	echo "Pending pets:"
+	curl -X GET "https://petstore.swagger.io/v2/pet/findByStatus?status=pending" -H "accept: application/json"
+
+	echo "Sold pets:"
+	curl -X GET "https://petstore.swagger.io/v2/pet/findByStatus?status=sold" -H "accept: application/json"
+
+	echo " pets:"
+	curl -X GET "https://petstore.swagger.io/v2/pet/findByStatus?status=" -H "accept: application/json"
+
+18) 	curl -X 'POST' \
+  'https://petstore.swagger.io/v2/user' \
+  -H 'accept: application/json' \
+  -H 'Content-Type: application/json' \
+  -d '{
+  "id": 44,
+  "username": "Test",
+  "firstName": "Test",
+  "lastName": "Tester",
+  "email": "test@mail.ru",
+  "password": "123456",
+  "phone": "+79999999999",
+  "userStatus": 1
+}'
