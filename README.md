@@ -79,7 +79,7 @@ echo "line" >> file3.txt
 cat file1.txt file3.txt
 
 
-# 20) Используя один из редакторов замените все строки в файле 1
+# 18) Используя один из редакторов замените все строки в файле 1
 echo no line > file1.txt
 echo no line >> file1.txt
 echo no line >> file1.txt
